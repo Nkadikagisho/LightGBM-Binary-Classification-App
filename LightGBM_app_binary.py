@@ -1,3 +1,4 @@
+pip install scikit-learn
 import streamlit as st
 import pandas as pd
 import numpy as np
@@ -5,10 +6,10 @@ import pickle
 from sklearn.preprocessing import LabelEncoder
 
 
-train_data_path = 'Downloads/Train_Test_Data/CapStone_Train.xlsx'
+train_data_path = 'CapStone_Train.xlsx'
 df_train = pd.read_excel(train_data_path)
 # Load the pre-trained model
-with open('Downloads/Train_Test_Data/model_binary.pkl', 'rb') as f:
+with open('model_binary.pkl', 'rb') as f:
     model = pickle.load(f)
     
 # Load the data model to extract levels (assuming `df_train` is a pandas DataFrame)
