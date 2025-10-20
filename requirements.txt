@@ -6,4 +6,3 @@ openpyxl
 pickle
 lightgbm
 matplotlib
-sklearn
