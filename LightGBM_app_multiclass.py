@@ -5,10 +5,10 @@ import pickle
 from sklearn.preprocessing import LabelEncoder
 
 
-path = 'Downloads/Train_Test_Data/CapStone_Train.xlsx'
+path = 'CapStone_Train.xlsx'
 df_train = pd.read_excel(path)
 # Load the pre-trained model
-with open('Downloads/Train_Test_Data/model.pkl', 'rb') as f:
+with open('model.pkl', 'rb') as f:
     model = pickle.load(f)
     
 # Load the data model to extract levels (assuming `df_train` is a pandas DataFrame)
