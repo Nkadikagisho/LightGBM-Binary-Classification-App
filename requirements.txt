@@ -2,4 +2,4 @@ streamlit
 pandas
 numpy
 lightgbm
-sklearn.preprocessing
+scikit-learn
