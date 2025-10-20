@@ -11,6 +11,8 @@ from sklearn.preprocessing import LabelEncoder
 #response = requests.get(url)
 #file = BytesIO(response.content)
 #df_train = pd.read_excel(file, engine='openpyxl')
+with open('data.pkl', 'rb') as t:
+    df_train = pickle.load(t)
 # Load the pre-trained model
 with open('model_binary.pkl', 'rb') as f:
     model = pickle.load(f)
