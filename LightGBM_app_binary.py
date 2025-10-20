@@ -7,10 +7,10 @@ import requests
 from io import BytesIO
 from sklearn.preprocessing import LabelEncoder
 
-url = 'https://github.com/Nkadikagisho/LightGBM-Binary-Classification-App/blob/main/CapStone_Test.xlsx'
-response = requests.get(url)
-file = BytesIO(response.content)
-df_train = pd.read_excel(file, engine='openpyxl')
+#url = 'https://github.com/Nkadikagisho/LightGBM-Binary-Classification-App/blob/main/CapStone_Test.xlsx'
+#response = requests.get(url)
+#file = BytesIO(response.content)
+#df_train = pd.read_excel(file, engine='openpyxl')
 # Load the pre-trained model
 with open('model_binary.pkl', 'rb') as f:
     model = pickle.load(f)
