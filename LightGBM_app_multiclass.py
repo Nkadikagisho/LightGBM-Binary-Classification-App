@@ -2,11 +2,13 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 import pickle
+import lightgbm
+import requests
+from io import BytesIO
 from sklearn.preprocessing import LabelEncoder
 
-
-path = 'CapStone_Train.xlsx'
-df_train = pd.read_excel(path)
+with open('data.pkl', 'rb') as t:
+    df_train = pickle.load(t)
 # Load the pre-trained model
 with open('model.pkl', 'rb') as f:
     model = pickle.load(f)
